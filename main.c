@@ -14,7 +14,7 @@ void test_date_correctness() {
     assert(date_correctness(31,12,100));
     assert(date_correctness(31,8,2016));
     assert(date_correctness(29,2,2400));
-    assert(date_correctness(31,4,3000));
+    assert(!date_correctness(31,4,3000));
     assert(!date_correctness(-1,3,1));
     assert(!date_correctness(1,-3,1));
     assert(!date_correctness(1,3,-1));
